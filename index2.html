@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma() {
+            var numero1 = parseFloat(document.getElementById("numero1").value); 
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var result = document.getElementById("result");
+
+            var soma = numero1+numero2;
+            result.innerHTML =  soma;
+        }
+
+        function subtracao() {
+            var numero1 = parseFloat(document.getElementById("numero1").value); 
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var result = document.getElementById("result");
+
+            var subtracao= numero1-numero2;
+            result.innerHTML =  subtracao;
+        }
+
+        function multiplicacao() {
+            var numero1 = parseFloat(document.getElementById("numero1").value); 
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var result = document.getElementById("result");
+
+            var multiplicacao = numero1*numero2;
+            result.innerHTML =  multiplicacao;
+        }
+
+        function divisao() {
+            var numero1 = parseFloat(document.getElementById("numero1").value); 
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var result = document.getElementById("result");
+
+            var divisao = numero1/numero2;
+            result.innerHTML =  divisao;
+        }
+
+    </script>
+</head>
+<body>
+        <label>#Num. 1: </label>
+        <input type="number" id="numero1" name="numero1" placeholder="Digite o 1° número"> <br>
+
+        <label>#Num. 2: </label>
+        <input type="number" id="numero2" name="numero2" placeholder="Digite o 2° número"> <br>
+
+        <div>
+            <input type="button" id="soma" value="+" onclick="soma()">
+            <input type="button" id="subtracao" value="-" onclick="subtracao()">
+            <input type="button" id="multiplicacao" value="*" onclick="multiplicacao()">
+            <input type="button" id="divisao" value="/" onclick="divisao()">
+        </div>
+        <div id="result">
+
+        </div>
+</body>
+</html>
